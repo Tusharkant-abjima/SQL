@@ -1,0 +1,21 @@
+select * from dimension.city
+inner join 
+dimension.customer on dimension.city.[Lineage Key] = dimension.customer.[Lineage Key]
+
+select * from dimension.city
+select * from dimension.customer
+
+select * from dimension.city D1
+outer join dimesion.customer D2
+on
+D1.lineagekey=D2.lineagekey
+
+select * from dimension.city
+select * from dimension.customer
+
+select * from dimension.city A1, dimension.city A2 where A1.[Sales Territory]=A2.[Sales Territory]
+
+select * from 
+              dimension.city 
+   cross join
+              dimension.Customer

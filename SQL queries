@@ -1,0 +1,3 @@
+select * from [Fact].[Movement] where [WWI Purchase Order ID] is not null 
+and 
+Quantity <= 100
